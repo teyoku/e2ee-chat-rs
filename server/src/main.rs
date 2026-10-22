@@ -1,7 +1,7 @@
-use std::error::Error;
+use std::io;
 
 #[tokio::main]
-async fn main() -> Result<(), Box<dyn Error>> {
+async fn main() -> io::Result<()> {
     println!("Hello from server!");
 
     Ok(())
